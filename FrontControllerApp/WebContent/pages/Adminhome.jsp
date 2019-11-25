@@ -6,22 +6,19 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Admin Home</title>
 </head>
+<link rel="stylesheet" href="style5.css">
 <body>
-<center>
-<h2 align="center">welcome admin</h2>
-<font color="green" size="5">${requestScope.success }</font>
-<form method="get" action="Approve.jsp">
-<input type="submit" id="1" value="Approve Institute"/><br><br>
-</form>
-<form method="get" action="Delete.jsp">
-<input type="submit" id="1" value="Delete"/><br><br>
-</form>
-<form method="get" action="ViewStudent1.jsp">
-<input type="submit" id="1" value="View Student1"/><br><br>
-</form>
-<form method="get" action="ViewComplaint.do">
-<input type="submit" id="1" value="View Complaint"/><br><br>
-</form></center>
+
+
+
+<div class="container">
+  <a href="..\pages\Approve.jsp"><button class="btn btn1">Approve Institute</button></a>
+   <a href="..\pages\Delete.jsp"><button class="btn btn2">Delete</button></a>
+    <a href="..\pages\ViewStudent1.jsp"><button class="btn btn3">View Student</button></a>
+     <a href="..\pages\ViewComplaint.jsp"><button class="btn btn4">View Complaint</button></a>
+ 
+</div>
+
 
 	
 </body>

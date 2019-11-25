@@ -7,61 +7,30 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Student Register</title>
 </head>
+<link rel="stylesheet" type="text/css" href="style4.css">
 <body>
+<div class="loginbox">
+    <img src="avatar.png" class="avatar">
+        <h1>Student Register Here</h1>
 <h2 align="center">Student Register</h2>
 <form action="studreg.do">
-<table>
-	<tr>
-		<td colspan="2"><c:if test="${requestScope.Err!=null}">
-			<font color="red">${requestScope.Err}</font>
-		</c:if></td>
-	</tr>
-	<tr>
-		<td>Student id</td>
-		<td><input type="text" name="sid"></td>
-	</tr>
-	<tr>
-		<td>Name</td>
-		<td><input type="text" name="sname"></td>
-	</tr>
-	<tr>
-		<td>Qualification</td>
-				<td><select name="squal">
-				<option >select</option>
-						<option value="SSLC">SSLC</option>
-						<option value="PUC">PUC</option>
-						<option value="BE">BE</option>
-						<option value="BCA">BCA</option>
-						<option value="BSc">BSc</option>
-						<option value="MBA">MBA</option>
-				</select>
-				</td>
-			</tr>
-	<tr>
-		<td>Contact</td>
-		<td><input type="text" name="scontact"></td>
-	</tr>
-	<tr>
-		<td>Address</td>
-		<td><input type="text" name="saddr"></td>
-	</tr>
-	<tr>
-		<td>Email</td>
-		<td><input type="email" name="semail"></td>
-	</tr>
-	<tr>
-		<td>Password</td>
-		<td><input type="password" name="spass"></td>
-	</tr>
-	<tr>
-		<td>Institute id</td>
-		<td><input type="number" name="iid"></td>
-	</tr>
-	<tr>
-		<td colspan="2" align="center"><input type="submit"
-			value="Register"></td>
-	</tr>
-</table>
+            <p>Student Id</p>
+            <input type="text" name="sid" placeholder="Enter Student Id">
+            <p>Student Name</p>
+            <input type="text" name="sname" placeholder="Enter Name">
+              <p>Qualification</p>
+            <input type="text" name="squal" placeholder="Enter Qualification">
+              <p>Contact</p>
+            <input type="text" name="scontact" placeholder="Enter Contact no">
+              <p>Address</p>
+            <input type="text" name="saddr" placeholder="Enter Address">
+              <p>Email</p>
+            <input type="email" name="semail" placeholder="Enter Email">
+              <p>Password</p>
+            <input type="password" name="spass" placeholder="Enter Password">
+             <p>Institute Id</p>
+             <input type="number" name="iid" placeholder="Enter Institute Id">
+            <input type="submit" name="" value="Register">
 </form>
 </body>
 </html>

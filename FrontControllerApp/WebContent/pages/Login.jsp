@@ -7,31 +7,21 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
+<link rel="stylesheet" type="text/css" href="style.css">
 <body>
 
-
+<div class="loginbox">
+    <img src="avatar.png" class="avatar">
+        <h1>Institute Login Here</h1>
 <h2 align="center">Login</h2>
 <form action="login.do" id="login">
 
-<table>
-	<tr>
-		<td colspan="2"><c:if test="${requestScope.Err!=null}">
-			<font color="red">${requestScope.Err}</font>
-		</c:if></td>
-	</tr>
-	
-	<tr>
-		<td>Student id</td>
-		<td><input type="text" name="sid"></td>
-	</tr>
-	<tr>
-		<td>password</td>
-		<td><input type="password" name="spass"></td>
-	</tr>
-	<tr>
-		<td colspan="2" align="center"><input type="submit" value="Login"></td>
-	</tr>
-</table>
+<p>Student Id</p>
+            <input type="text" name="sid" placeholder="Enter Student Id">
+            <p>Password</p>
+            <input type="password" name="spass" placeholder="Enter Password">
+            <input type="submit"  value="Login">
+            <a href="#">Lost your password?</a><br>
 </form>
 	
 </body>

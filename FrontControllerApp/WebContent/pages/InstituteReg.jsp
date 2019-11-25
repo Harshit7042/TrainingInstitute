@@ -6,50 +6,29 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Institute Registration</title>
 </head>
+<link rel="stylesheet" type="text/css" href="style4.css">
 <body>
+<div class="loginbox">
+    <img src="avatar.png" class="avatar">
+        <h1>Institute Register Here</h1>
 <h2 align="center">Institute Register</h2>
 <form action="institutereg.do">
-<table>
-	<tr>
-		<td colspan="2"><c:if test="${requestScope.Err!=null}">
-			<font color="red">${requestScope.Err}</font>
-		</c:if></td>
-	</tr>
-	<tr>
-		<td>Institute id</td>
-		<td><input type="number" name="iid"></td>
-	</tr>
-	<tr>
-		<td>Institute name</td>
-		<td><input type="text" name="iname"></td>
-	</tr>
-	<tr>
-		<td>Affiliation date</td>
-		<td><input type="text" name="affdate"></td>
-	</tr>
-	<tr>
-		<td>Address</td>
-		<td><input type="text" name="iaddr"></td>
-	</tr>
-	<tr>
-		<td>Seat</td>
-		<td><input type="number" name="iseats"></td>
-	</tr>
-	<tr>
-		<td>Course</td>
-		<td><input type="number" name="icourse"></td>
-	</tr>
-	<tr>
-		<td>Password</td>
-		<td><input type="password" name="ipass"></td>
-	</tr>
-	
-	
-	<tr>
-		<td colspan="2" align="center"><input type="submit"
-			value="Register"></td>
-	</tr>
-</table>
+            <p>Institute Id</p>
+            <input type="text" name="iid" placeholder="Enter Institute Id">
+            <p>Institute Name</p>
+            <input type="text" name="iname" placeholder="Enter Name">
+              <p>Affiliation date</p>
+            <input type="text" name="affdate" placeholder="Enter Date">
+              <p>Address</p>
+            <input type="text" name="iaddr" placeholder="Enter Address">
+              <p>Seat</p>
+            <input type="number" name="iseats" placeholder="Enter Seats">
+              <p>Course</p>
+            <input type="number" name="icourse" placeholder="Enter Course">
+              <p>Password</p>
+            <input type="password" name="ipass" placeholder="Enter Password">
+            <input type="submit" name="" value="Register">
+        
 </form>
 </body>
 </html>

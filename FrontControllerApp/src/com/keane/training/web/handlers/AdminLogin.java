@@ -22,6 +22,7 @@ public class AdminLogin implements HttpRequestHandler {
 	@Override
 	public void handle(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+	
 
 		AdminDAO dao = new AdminDAO();
 		Admin user = new Admin();
@@ -36,6 +37,8 @@ public class AdminLogin implements HttpRequestHandler {
 			List finalres=new ArrayList();
 				 finalres = AdminDAO.LoginAdmin(user);
 				if (!(finalres.isEmpty())) {
+					
+					
 
 					RequestDispatcher dispatcher = request
 							.getRequestDispatcher("..\\pages\\Adminhome.jsp");

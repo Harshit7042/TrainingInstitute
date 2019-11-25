@@ -4,31 +4,22 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Student Login</title>
+<title>Institute Login</title>
 </head>
+<link rel="stylesheet" type="text/css" href="style.css">
 <body>
-<h2 align="center">Student Login</h2>
+<div class="loginbox">
+    <img src="avatar.png" class="avatar">
+        <h1>Institute Login Here</h1>
+<h2 align="center">Institute Login</h2>
 <form action="instituteLogin.do" id="login">
 
-<table>
-	<tr>
-		<td colspan="2"><c:if test="${requestScope.Err!=null}">
-			<font color="red">${requestScope.Err}</font>
-		</c:if></td>
-	</tr>
-	
-	<tr>
-		<td>Institute name</td>
-		<td><input type="text" name="iname"></td>
-	</tr>
-	<tr>
-		<td>password</td>
-		<td><input type="password" name="ipass"></td>
-	</tr>
-	<tr>
-		<td colspan="2" align="center"><input type="submit" value="Login"></td>
-	</tr>
-</table>
+<p>Institute Name</p>
+            <input type="text" name="iname" placeholder="Enter Institute Name">
+            <p>Password</p>
+            <input type="password" name="ipass" placeholder="Enter Password">
+            <input type="submit" name="" value="Login">
+            <a href="#">Lost your password?</a><br>
 </form>
 	
 </body>

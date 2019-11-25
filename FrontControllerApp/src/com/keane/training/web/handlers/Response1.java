@@ -21,6 +21,7 @@ public class Response1  implements HttpRequestHandler{
 	@Override
 	public void handle(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {	
+		PrintWriter out= response.getWriter();
 
 		try {
 			
@@ -33,11 +34,11 @@ public class Response1  implements HttpRequestHandler{
 			s=d.ViewResponse(iid);
 			pr.println("<center>");
 			   pr.println("<table border='2'>");
-			   pr.println("<tr><th>RequestId</th><th>StudentId</th><th>Response</th></tr>");
+			   pr.println("<tr><th>StudentName</th><th>Response</th></tr>");
 			if(!(s.isEmpty())){
 				for(Iterator it=s.iterator();it.hasNext();){
 					Student s1=(Student)it.next();
-					 pr.println("<tr><td>"+s1.getSname()+"\t"+s1.getRes()+"</td></tr><br>");
+					 pr.println("<tr><td>"+s1.getSname()+"\t"+"</td><td>"+s1.getRes()+"</td></tr><br>");
 				}
 			}
 			pr.println("</table>");
@@ -49,6 +50,18 @@ public class Response1  implements HttpRequestHandler{
 			request.setAttribute("Err", e.getMessage());
 			dispatcher.forward(request, response);
 		}
+		String h="<html>";
+		h+="<body >";
+		
+		
+		h+="<form action='StudentHome.jsp'>";
+		h+="<input type='submit' value='Back'/>";
+		h+="</form>";
+		
+		
+		h+="</body>";
+		h+="</html>";
+		out.print(h);
 	}
 }
 

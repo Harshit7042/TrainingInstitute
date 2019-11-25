@@ -6,45 +6,23 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
+<link rel="stylesheet" type="text/css" href="style.css">
 <body>
-<h2 align="center">Student Register</h2>
+<div class="loginbox">
+    <img src="avatar.png" class="avatar">
+        <h1>Insert Faculty</h1>
 <form action="FacultyData.do">
-<table>
-	<tr>
-		<td colspan="2"><c:if test="${requestScope.Err!=null}">
-			<font color="red">${requestScope.Err}</font>
-		</c:if></td>
-	</tr>
-	<tr>
-		<td>Faculty id</td>
-		<td><input type="number" name="fid"></td>
-	</tr>
-	<tr>
-		<td>Faculty name</td>
-		<td><input type="text" name="fname"></td>
-	</tr>
-	<tr>
-		<td>Department</td>
-				<td><select name="fdept">
-				<option >select</option>
-						<option value="cse">cse</option>
-						<option value="ece">ece</option>
-						<option value="eee">eee</option>
-						<option value="ise">ise</option>
-						<option value="civil">civil</option>
-						<option value="Me">Me</option>
-				</select>
-				</td>
-			</tr>
-	<tr>
-		<td>Institute id</td>
-		<td><input type="number" name="iid"></td>
-	</tr>
-	
-		<td colspan="2" align="center"><input type="submit"
-			value="Insert"></td>
-	</tr>
-</table>
+
+<p>Faculty Id</p>
+            <input type="number" name="fid" placeholder="Enter Id">
+            <p>Faculty Name</p>
+            <input type="text" name="fname" placeholder="Enter Name">
+            <p>Department</p>
+            <input type="text" name="fdept" placeholder="Enter Department">
+            <p>Institute Id</p>
+            <input type="number" name="iid" placeholder="Enter Institute Id">
+            <input type="submit" name="" value="Insert Faculty">
+
 </form>
 </body>
 </html>

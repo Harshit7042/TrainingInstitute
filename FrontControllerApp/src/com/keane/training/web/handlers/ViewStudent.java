@@ -23,6 +23,8 @@ public class ViewStudent implements HttpRequestHandler{
 	@Override
 	public void handle(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {	
+		
+		PrintWriter out=response.getWriter();
 
 		try {
 			
@@ -62,6 +64,18 @@ public class ViewStudent implements HttpRequestHandler{
 			request.setAttribute("Err", e.getMessage());
 			dispatcher.forward(request, response);
 		}
+		String h="<html>";
+		h+="<body >";
+		h+="<center>";
+		
+		h+="<form action='InstituteHome.jsp'>";
+		h+="<input type='submit' value='Back'/>";
+		h+="</form>";
+		h+="</center>";
+		
+		h+="</body>";
+		h+="</html>";
+		out.print(h);
 	}
 }
 

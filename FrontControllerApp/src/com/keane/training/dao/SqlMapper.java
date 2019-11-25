@@ -38,13 +38,13 @@ public class SqlMapper {
 	public static final String LOGINSTUDENT=
 		"select sid,spass from Student where sid=? and spass=?";
 	public static final String UPDATESTUDENT=
-		"update Student set sname=?,quali=?,scontact=?,saddr=?,semail=?,spass=? where sid=?";
+		"update Student set sname=?,squal=?,scontact=?,saddr=?,semail=?,spass=? where sid=?";
 	public static final String COMPLAINTSTUDENT=
 		"insert into Request values(?,?,?)";
 	public static final String INSERTINSTITUTE=
 		"insert into Institute values(?,?,?,?,?,?,?,?)";
 	public static final String UPDATEINSTITUTE=
-		"update Institute set iid=?,affdate=?,iaddr=?,iseats=?,icourse=?,ipass=? where iname=?";
+		"update Institute set iid=?,ipass=?,affdate=?,iaddr=?,iseats=?,icourse=? where iname=?";
 	public static final String FACULTYINFO=
 		"insert into Faculty values(?,?,?,?)";
 	public static final String STUDENTDETAILS=
@@ -79,7 +79,7 @@ public class SqlMapper {
 	public static final String INSERTFEEDBACK=
 		"insert into Feedback values(?,?,?,?)";
 	public static final String VIEWFEEDBACK=
-		"select * from Feedback where iid=? ";
+		"select * from Feedback where iid=?";
 	public static final String UPLOADARTICLE1=
 		"insert into Article values(?,?,?)";
 	public static final String VIEWARTICLE1=
@@ -292,12 +292,13 @@ public static final ResultMapper INSTITUTEMAPPER2=
                     			public Object mapRows(ResultSet rs) throws SQLException {
                     				int iid=rs.getInt(1);
                     				String iname=rs.getString(2);
-                    				String affdate=rs.getString(3);
-                    				String iaddr=rs.getString(4);
-                    				int iseats=rs.getInt(5);
-                    				int icourse=rs.getInt(6);
-                    				String ipass=rs.getString(7);
-                    				Institute i=new Institute(iid,iname,affdate,iaddr,iseats,icourse,ipass);
+                    				String ipass=rs.getString(3);
+                    				String affdate=rs.getString(4);
+                    				String iaddr=rs.getString(5);
+                    				int iseats=rs.getInt(6);
+                    				int icourse=rs.getInt(7);
+                    				
+                    				Institute i=new Institute(iid,iname,ipass,affdate,iaddr,iseats,icourse);
                     				return i;
                     			
                     			}

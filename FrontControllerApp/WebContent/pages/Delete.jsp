@@ -6,38 +6,21 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Delete</title>
 </head>
+<link rel="stylesheet" type="text/css" href="style.css">
 <body>
 <center>
-<div class="wrap">
-<h2 align="center">Delete</h2>
-<form action="Viewinstitute.do">
-<table>
-	
-	
-	<tr>
-		<td colspan="2" align="center"><input type="submit"
-			value="view"></td>
-	</tr>
-</table>
-</form>
-<form action="InsDelete.do">
+<div class="loginbox">
+    <img src="avatar.png" class="avatar">
+        <h1>Delete Institute</h1>
 
-<table>
-	<tr>
-		<td colspan="2"><c:if test="${requestScope.Err!=null}">
-			<font color="red">${requestScope.Err}</font>
-		</c:if></td>
-	</tr>
-	<tr>
-		<td>Institute id</td>
-		<td><input type="number" name="iid"></td>
-	</tr>
-	
-	<tr>
-		<td colspan="2" align="center"><input type="submit"
-			value="delete"></td>
-	</tr>
-</table>
+<form action="InsDelete.do">
+<p>Institute Id</p>
+            <input type="number" name="iid" placeholder="Enter Id">
+           
+            <input type="submit" name="" value="Delete Institute">
+           
+
+
 
 </form></div>
 </center>

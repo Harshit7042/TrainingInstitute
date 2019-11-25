@@ -20,6 +20,7 @@ public class ViewRequest  implements HttpRequestHandler{
 	@Override
 	public void handle(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {	
+		PrintWriter out =response.getWriter();
 
 		try {
 			
@@ -31,7 +32,7 @@ public class ViewRequest  implements HttpRequestHandler{
 			s=d.ViewRequests();
 			pr.println("<center>");
 			   pr.println("<table border='2'>");
-			   pr.println("<tr><th>StudentId</th><th>InstituteId</th><th>Request" +
+			   pr.println("<tr><th>StudentName</th><th>Qualification</th><th>Marks" +
 			   		"</th></tr>");
 			if(!(s.isEmpty())){
 				for(Iterator it=s.iterator();it.hasNext();){
@@ -49,5 +50,17 @@ public class ViewRequest  implements HttpRequestHandler{
 			request.setAttribute("Err", e.getMessage());
 			dispatcher.forward(request, response);
 		}
+		String h="<html>";
+		h+="<body >";
+		
+		
+		h+="<form action='InstituteHome.jsp'>";
+		h+="<input type='submit' value='Back'/>";
+		h+="</form>";
+		
+		
+		h+="</body>";
+		h+="</html>";
+		out.print(h);
 	}
 }

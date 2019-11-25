@@ -56,6 +56,11 @@ public class InstituteCheck implements HttpRequestHandler{
 					request.setAttribute("details", user);
 					dispatcher.forward(request, response);
 				}
+				else
+				{
+					out.println("instiute not approved");
+				}
+				
 				
 			}
 		 catch (Exception e) {

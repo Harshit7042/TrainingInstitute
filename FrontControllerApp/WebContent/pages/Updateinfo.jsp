@@ -6,49 +6,35 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
+<link rel="stylesheet" type="text/css" href="style4.css">
 <body>
-<h2 align="center">Update profile</h2>
+<div class="loginbox">
+    <img src="avatar.png" class="avatar">
+        <h1>Update Institute Details</h1>
 <form action="Updateinfo.do">
-<table>
-	<tr>
-		<td colspan="2"><c:if test="${requestScope.Err!=null}">
-			<font color="red">${requestScope.Err}</font>
-		</c:if></td>
-	</tr>
-	<tr>
-		<td>Institute id</td>
-		<td><input type="number" name="iid"></td>
-	</tr>
-	<tr>
-		<td>Institute name</td>
-		<td><input type="text" name="iname"></td>
-	</tr>
-	<tr>
-		<td>Affiliation date</td>
-		<td><input type="text" name="affdate"></td>
-	</tr>
-	<tr>
-		<td>Address</td>
-		<td><input type="text" name="iaddr"></td>
-	</tr>
-	<tr>
-		<td>Seat</td>
-		<td><input type="number" name="iseats"></td>
-	</tr>
-	<tr>
-		<td>Course</td>
-		<td><input type="number" name="icourse"></td>
-	</tr>
-	<tr>
-		<td>Password</td>
-		<td><input type="password" name="ipass"></td>
-	</tr>
-	
-	<tr>
-		<td colspan="2" align="center"><input type="submit"
-			value="Update"></td>
-	</tr>
-</table>
+
+
+
+
+<p>Institute Id</p>
+            <input type="number" name="iid" placeholder="Enter Institute Id">
+            <p>Institute Name</p>
+            <input type="text" name="iname" placeholder="Enter Name">
+             <p>Password</p>
+            <input type="password" name="ipass" placeholder="Enter Password">
+              <p>Affiliation Date</p>
+            <input type="text" name="affdate" placeholder="Enter Date">
+              <p>Address</p>
+            <input type="text" name="iaddr" placeholder="Enter Address">
+              <p>Seats</p>
+            <input type="number" name="iseats" placeholder="Enter Seats">
+              <p>Course</p>
+            <input type="number" name="icourse" placeholder="Enter Course">
+             
+            
+            <input type="submit" name="" value="Update Institute Information">
+
+
 </form>
 </body>
 </html>

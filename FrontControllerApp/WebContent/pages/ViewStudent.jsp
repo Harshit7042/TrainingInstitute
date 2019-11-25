@@ -6,18 +6,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>view</title>
 </head>
+<link rel="stylesheet" type="text/css" href="style.css">
 <body>
+<div class="loginbox">
+    <img src="avatar.png" class="avatar">
+        <h1>View Student</h1>
 <form action="ViewStudent.do">
-<font color="green" size="5">${requestScope.success }</font>
-<table>
-<tr>
-		<td>Institute id</td>
-		<td><input type="number" name="iid"></td>
-	</tr>
-	<tr>
-		<td colspan="2" align="center"><input type="submit" value="View"></td>
-	</tr>
-</table>
+
+     <p>Institute Id</p>
+            <input type="number" name="iid" placeholder="Enter Id">
+            
+            <input type="submit" name="" value="View Student">
+
 </form>
 </body>
 </html>

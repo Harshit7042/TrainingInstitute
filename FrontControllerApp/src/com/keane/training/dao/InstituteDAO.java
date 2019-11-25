@@ -111,11 +111,12 @@ public class InstituteDAO {
 				public void mapParam(PreparedStatement preStmt)
 				throws SQLException {
 					preStmt.setInt(1,i.getIid());
-					preStmt.setString(2,i.getAffdate());
-					preStmt.setString(3,i.getIaddr());
-					preStmt.setInt(4,i.getIseats());
-					preStmt.setInt(5,i.getIcourse());
-					preStmt.setString(6,i.getIpass());
+					preStmt.setString(2,i.getIpass());
+					preStmt.setString(3,i.getAffdate());
+					preStmt.setString(4,i.getIaddr());
+					preStmt.setInt(5,i.getIseats());
+					preStmt.setInt(6,i.getIcourse());
+				
 					preStmt.setString(7,i.getIname());
 					
 				}

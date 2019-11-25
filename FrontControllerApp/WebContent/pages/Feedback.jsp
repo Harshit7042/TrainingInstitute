@@ -6,39 +6,27 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Feedback</title>
 </head>
+<link rel="stylesheet" type="text/css" href="style.css">
 <body>
-<center>
-<div class="wrap">
-<h2 align="center">Feedback</h2>
+
+<div class="loginbox">
+    <img src="avatar.png" class="avatar">
+        <h1>Send Feedback</h1>
+<h2 align="center">Send FeedBack</h2>
 <form action="feedback.do">
-<table>
-	<tr>
-		<td colspan="2"><c:if test="${requestScope.Err!=null}">
-			<font color="red">${requestScope.Err}</font>
-		</c:if></td>
-	</tr>
-	<tr>
-		<td>Feedback id</td>
-		<td><input type="number" name="cid"></td>
-	</tr>
-	<tr>
-		<td>Student id</td>
-		<td><input type="number" name="sid"></td>
-	</tr>
-	<tr>
-		<td>Institute Id</td>
-		<td><input type="number" name="iid"></td>
-	</tr>
-	<tr>
-		<td>Feedback</td>
-		<td><input type="text" name="feedback"></td>
-	</tr>
-	<tr>
-		<td colspan="2" align="center"><input type="submit"
-			value="send"></td>
-	</tr>
-</table>
+            <p>Feedback Id</p>
+            <input type="number" name="cid" placeholder="Enter Id">
+             <p>Student Id</p>
+            <input type="number" name="sid" placeholder="Enter Id">
+             <p>Institute Id</p>
+            <input type="number" name="iid" placeholder="Enter Id">
+             <p>Feedback</p>
+            <input type="text" name="feedback" placeholder="Enter Feedback">
+           
+            <input type="submit" name="" value="Send Feedback">
+            <a href="#">Lost your password?</a><br>
+            <a href="#">Don't have an account?</a>
 </form></div>
-</center>
+
 </body>
 </html>

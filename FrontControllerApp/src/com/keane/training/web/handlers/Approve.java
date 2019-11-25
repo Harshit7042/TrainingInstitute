@@ -22,16 +22,17 @@ public class Approve implements HttpRequestHandler{
 		int s=ad.InsertStatus(i,stat);
 		if(s!=0)
 		{
-			out.println("<p>Approved Student succcessfully</p>");
+			RequestDispatcher dispatcher = request
+					.getRequestDispatcher("..\\pages\\Adminhome.jsp");
+			request.setAttribute("success",
+					"User succesfully registered with the system");
+			
+			dispatcher.forward(request, response);
+		
 		
 			
 		}
-		else
-		{
-			out.println("<p>Not Approved</p>");
-			RequestDispatcher r2=request.getRequestDispatcher("AdminHome.jsp");
-			r2.include(request, response);
-		}
+		
 		
 	}
 }

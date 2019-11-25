@@ -3,11 +3,23 @@ package com.keane.training.domain;
 public class Institute {
 int iid;
 String iname;
+String ipass;
 String affdate;
 String iaddr;
 int iseats;
 int icourse;
-String ipass;
+
+
+public Institute(int iid, String iname, String ipass, String affdate, String iaddr, int iseats, int icourse) {
+	super();
+	this.iid = iid;
+	this.iname = iname;
+	this.ipass = ipass;
+	this.affdate = affdate;
+	this.iaddr = iaddr;
+	this.iseats = iseats;
+	this.icourse = icourse;
+}
 int status;
 int sid;
 
@@ -29,7 +41,7 @@ public Institute(String iname, String ipass) {
 	this.iname = iname;
 	this.ipass = ipass;
 }
-public Institute(int iid, String iname, String affdate, String iaddr,
+public Institute(int iid, String iname,String affdate, String iaddr,
 		int iseats, int icourse, String ipass) {
 	super();
 	this.iid = iid;

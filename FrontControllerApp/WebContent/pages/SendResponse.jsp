@@ -6,29 +6,22 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
+<link rel="stylesheet" type="text/css" href="style.css">
 <body>
-<h2 align="center">Institute send response to student</h2>
+<div class="loginbox">
+    <img src="avatar.png" class="avatar">
+        <h1>Institute send response to student</h1>
+
 <form action="SendResponse.do" id="login">
 
-<table>
-	<tr>
-		<td colspan="2"><c:if test="${requestScope.Err!=null}">
-			<font color="red">${requestScope.Err}</font>
-		</c:if></td>
-	</tr>
-	
-	<tr>
-		<td>Student name </td>
-		<td><input type="number" name="sname"></td>
-	</tr>
-	<tr>
-		<td>Response</td>
-		<td><input type="text" name="response"></td>
-	</tr>
-	<tr>
-		<td colspan="2" align="center"><input type="submit" value="send"></td>
-	</tr>
-</table>
+            <p>Student Name</p>
+            <input type="text" name="sname" placeholder="Enter name">
+            <p>Response</p>
+            <input type="text" name="response" placeholder="Enter Response">
+            <input type="submit" name="" value="Send Response">
+            
+
+
 </form>
 </body>
 </html>

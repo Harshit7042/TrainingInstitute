@@ -40,7 +40,7 @@ public class InstituteReg implements HttpRequestHandler{
 				if (finalRes > 0) {
 
 					RequestDispatcher dispatcher = request
-							.getRequestDispatcher("..\\pages\\InstituteHome.jsp");
+							.getRequestDispatcher("..\\pages\\index.jsp");
 					request.setAttribute("success",
 							"User succesfully registered with the system");
 					request.setAttribute("details", user);

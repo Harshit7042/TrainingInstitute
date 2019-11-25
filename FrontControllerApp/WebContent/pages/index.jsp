@@ -21,7 +21,7 @@
 				<font face="sans" size="4">
 					<a href="..\pages\AdminLogin.jsp">ADMIN LOGIN</a>&nbsp;&nbsp;&nbsp;&nbsp;
 					<a href="..\pages\InstituteLogin.jsp">INSTITUTE LOGIN</a>&nbsp;&nbsp;&nbsp;&nbsp;
-					<a href="..\pages\InstituteReg.jsp">INSTITUTE REGISTER</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="..\pages\InstituteReg.jsp">INSTITUTE REGISTRATION</a>&nbsp;&nbsp;&nbsp;&nbsp;
 					<a href="..\pages\Login.jsp">STUDENT LOGIN</a>&nbsp;&nbsp;&nbsp;&nbsp;
 					<a href="..\pages\studentReg.jsp">STUDENT REGISTRATION</a>
 				</font>

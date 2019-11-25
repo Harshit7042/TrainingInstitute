@@ -4,7 +4,7 @@ body{
 }
 .container{
   text-align: center;
-  margin-top: 360px;
+  margin-top: 180px;
 }
 .btn{
   border: 1px solid #3498db;
@@ -34,7 +34,7 @@ body{
   content: "";
   position: absolute;
   left: 0;
-  width: 100%;
+  width: 50%;
   height: 0%;
   background: #3498db;
   z-index: -1;

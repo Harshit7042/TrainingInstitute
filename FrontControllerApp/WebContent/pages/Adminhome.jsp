@@ -8,14 +8,17 @@
 </head>
 <link rel="stylesheet" href="style5.css">
 <body bgcolor="#828282">
-
-
+<center>
+<p>WELCOME TO ADMIN MENU</p>
+</center>
 
 <div class="container">
-  <a href="..\pages\Approve.jsp"><button class="btn btn1">Approve Institute</button></a>
-   <a href="..\pages\Delete.jsp"><button class="btn btn2">Delete</button></a>
+  <a href="..\pages\Viewinstitute.do"><button class="btn btn3">View Institute then Approved</button></a>
+   <a href="..\pages\ViewInstitute1.do"><button class="btn btn4">View Institute Then Delete</button></a>
     <a href="..\pages\ViewStudent1.do"><button class="btn btn3">View Student</button></a>
-     <a href="..\pages\ViewComplaint.jsp"><button class="btn btn4">View Complaint</button></a>
+     <a href="..\pages\ViewComplaint.do"><button class="btn btn4">View Feedback</button></a>
+     <a href="..\pages\index.jsp"><button class="btn btn4">SignOut</button></a>
+     
  
 </div>
 

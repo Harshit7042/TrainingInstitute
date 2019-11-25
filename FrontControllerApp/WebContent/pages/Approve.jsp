@@ -6,29 +6,25 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>	Admin</title>
 </head>
-<body><center>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+
+<div class="loginbox">
+    <img src="avatar.png" class="avatar">
+        <h1>Approved Institute</h1>
+<h2 align="center">Aprroved</h2>
 <form action="Approve.do">
-<table>
-	<tr>
-		<td colspan="2"><c:if test="${requestScope.Err!=null}">
-			<font color="red">${requestScope.Err}</font>
-		</c:if></td>
-	</tr>
-	<tr>
-		<td>Institute id</td>
-		<td><input type="number" name="iid"></td>
-	</tr>
-	<tr>
-		<td>Status</td>
-		<td><input type="number" name="status"></td>
-	</tr>
-	
-	<tr>
-		<td colspan="2" align="center"><input type="submit"
-			value="Approve"></td>
-	</tr>
-</table>
-</form></div></center>
+
+
+<p>Institute Id</p>
+            <input type="number" name="iid" placeholder="Enter Id">
+            <p>Status</p>
+            <input type="number" name="status" placeholder="Enter Status 0 or 1">
+            <input type="submit" name="" value="Approved">
+          
+
+</form></div>
 
 </body>
 </html>

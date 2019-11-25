@@ -39,7 +39,7 @@ public class StudentReq implements HttpRequestHandler {
 				if (finalRes > 0) {
 
 					RequestDispatcher dispatcher = request
-							.getRequestDispatcher("..\\pages\\StudentHome.jsp");
+							.getRequestDispatcher("..\\pages\\index.jsp");
 					request.setAttribute("success",
 							"Request sent");
 					request.setAttribute("details", user);

@@ -6,34 +6,26 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Upload Article</title>
 </head>
+<link rel="stylesheet" type="text/css" href="style.css">
 <body>
 <center>
-<div class="wrap">
-<h2 align="center">Article </h2>
+<div class="loginbox">
+    <img src="avatar.png" class="avatar">
+        <h1>Upload Article</h1>
+
 <form action="ArticleUpload.do">
-<table>
-	<tr>
-		<td colspan="2"><c:if test="${requestScope.Err!=null}">
-			<font color="red">${requestScope.Err}</font>
-		</c:if></td>
-	</tr>
-	<tr>
-		<td>Article id</td>
-		<td><input type="number" name="aid"></td>
-	</tr>
-	<tr>
-		<td>Institute id</td>
-		<td><input type="number" name="iid"></td>
-	</tr>
-	<tr>
-		<td>Article</td>
-		<td><input type="text" name="article"></td>
-	</tr>
-	<tr>
-		<td colspan="2" align="center"><input type="submit"
-			value="upload"></td>
-	</tr>
-</table>
+
+
+   <p>Article Id</p>
+            <input type="number" name="aid" placeholder="Enter Id">
+             <p>Institute Id</p>
+            <input type="number" name="iid" placeholder="Enter Id">
+             <p>Article</p>
+            <input type="text" name="article" placeholder="Enter Article">
+     
+           
+            <input type="submit" name="" value="Upload Article">
+
 </form></div>
 </body>
 </html>

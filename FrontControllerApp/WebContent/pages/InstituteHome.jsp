@@ -9,15 +9,16 @@
 <link rel="stylesheet" href="style5.css">
 <body bgcolor="#828282">
 
-<h2 align="center">welcome</h2>
+<h1 align="center">WELCOME TO INSTITUTE PAGE</h1>
 <div class="container">
-  <a href="..\pages\ViewStudent.jsp"><button class="btn btn1">View Student</button></a>
-   <a href="..\pages\UploadArticle.jsp"><button class="btn btn2">Upload Article</button></a>
+  <a href="..\pages\ViewStudent.jsp"><button class="btn btn3">View Student</button></a>
+   <a href="..\pages\UploadArticle.jsp"><button class="btn btn4">Upload Article</button></a>
     <a href="..\pages\Faculty.jsp"><button class="btn btn3">Faculty</button></a>
      <a href="..\pages\Updateinfo.jsp"><button class="btn btn4">Update</button></a>
-     <a href="..\pages\SendResponse.jsp"><button class="btn btn1">Send Response</button></a>
-     <a href="..\pages\ViewRequest.jsp"><button class="btn btn2">View Request</button></a>
+     <a href="..\pages\SendResponse.jsp"><button class="btn btn3">Send Response</button></a>
+     <a href="..\pages\ViewRequest.do"><button class="btn btn4">View Request</button></a>
      <a href="..\pages\Viewfeedback.jsp"><button class="btn btn3">View FeedBack</button></a>
+     <a href="..\pages\index.jsp"><button class="btn btn4">SignOut</button></a>
  
 </div>
 

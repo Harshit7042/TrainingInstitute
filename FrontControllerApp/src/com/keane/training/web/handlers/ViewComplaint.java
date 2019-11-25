@@ -32,7 +32,7 @@ public class ViewComplaint  implements HttpRequestHandler{
 			pr.println("<center>");
 			   pr.println("<table border='2'>");
 			   pr.println("<tr><th>RequestId</th><th>StudentId</th><th>InstituteId" +
-			   		"</th><th>Complaint</th></tr>");
+			   		"</th><th>Feedback</th></tr>");
 			if(!(s.isEmpty())){
 				for(Iterator it=s.iterator();it.hasNext();){
 					Feedback s1=(Feedback)it.next();

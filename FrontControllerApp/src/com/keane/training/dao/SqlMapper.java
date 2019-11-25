@@ -38,7 +38,7 @@ public class SqlMapper {
 	public static final String LOGINSTUDENT=
 		"select sid,spass from Student where sid=? and spass=?";
 	public static final String UPDATESTUDENT=
-		"update Student3 set sname=?,quali=?,scontact=?,saddr=?,semail=?,spass=? where sid=?";
+		"update Student set sname=?,quali=?,scontact=?,saddr=?,semail=?,spass=? where sid=?";
 	public static final String COMPLAINTSTUDENT=
 		"insert into Request values(?,?,?)";
 	public static final String INSERTINSTITUTE=
@@ -61,11 +61,11 @@ public class SqlMapper {
 	public static final String Faculty=
 		"select * from faculty";
 	public static final String STUDENTDETAILS12=
-		"select * from student3 where iid=?";
+		"select * from student where iid=?";
 	public static final String DELETEINSTITUTE=
 		"delete from Institute where iid=?";
 	public static final String VIEWINSTITUTE=
-		"select * from Institute1";
+		"select * from Institute";
 	public static final String INSERTSTATUS1=
 		"update Institute set status=? where iid=?";
 	public static final String VIEWCOMPLAINTS1=

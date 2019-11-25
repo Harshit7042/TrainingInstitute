@@ -6,36 +6,20 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Institute home</title>
 </head>
-<body>
+<link rel="stylesheet" href="style5.css">
+<body bgcolor="#828282">
 
 <h2 align="center">welcome</h2>
-<font color="green" size="5">${requestScope.success }</font>
-
-<form method="get" action="ViewStudent.jsp">
-<input type="submit" id="1" value="View Student"/><br><br>
-</form>
-
-<form method="get" action="UploadArticle.jsp">
-<input type="submit" id="1" value="Upload Article"/><br><br>
-</form>
-
-<form method="get" action="Faculty.jsp">
-<input type="submit" id="1" value="Insert Faculty Details"/><br><br>
-</form>
-
-
-<form method="get" action="Updateinfo.jsp">
-<input type="submit" id="1" value="Update info"/><br><br>
-</form>
-<form method="get" action="SendResponse.jsp">
-<input type="submit" id="1" value="Send Response"/><br><br>
-</form>
-<form method="get" action="ViewRequest.jsp">
-<input type="submit" id="1" value="View Request"/><br><br>
-</form>
-<form method="get" action="Viewfeedback.jsp">
-<input type="submit" id="1" value="View feedback"/><br><br>
-</form>
+<div class="container">
+  <a href="..\pages\ViewStudent.jsp"><button class="btn btn1">View Student</button></a>
+   <a href="..\pages\UploadArticle.jsp"><button class="btn btn2">Upload Article</button></a>
+    <a href="..\pages\Faculty.jsp"><button class="btn btn3">Faculty</button></a>
+     <a href="..\pages\Updateinfo.jsp"><button class="btn btn4">Update</button></a>
+     <a href="..\pages\SendResponse.jsp"><button class="btn btn1">Send Response</button></a>
+     <a href="..\pages\ViewRequest.jsp"><button class="btn btn2">View Request</button></a>
+     <a href="..\pages\Viewfeedback.jsp"><button class="btn btn3">View FeedBack</button></a>
+ 
+</div>
 
 
 </body>

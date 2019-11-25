@@ -7,14 +7,14 @@
 <title>Admin Home</title>
 </head>
 <link rel="stylesheet" href="style5.css">
-<body>
+<body bgcolor="#828282">
 
 
 
 <div class="container">
   <a href="..\pages\Approve.jsp"><button class="btn btn1">Approve Institute</button></a>
    <a href="..\pages\Delete.jsp"><button class="btn btn2">Delete</button></a>
-    <a href="..\pages\ViewStudent1.jsp"><button class="btn btn3">View Student</button></a>
+    <a href="..\pages\ViewStudent1.do"><button class="btn btn3">View Student</button></a>
      <a href="..\pages\ViewComplaint.jsp"><button class="btn btn4">View Complaint</button></a>
  
 </div>

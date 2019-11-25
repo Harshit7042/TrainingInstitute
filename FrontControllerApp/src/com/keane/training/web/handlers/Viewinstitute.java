@@ -27,7 +27,7 @@ public class Viewinstitute implements HttpRequestHandler{
 		
 			PrintWriter pr=response.getWriter();
 			List<Institute> s=null;
-		AdminDAO d=new AdminDAO();
+		    AdminDAO d=new AdminDAO();
 		//	int iid=Integer.parseInt(request.getParameter("iid"));
 			s=d.ViewInstitute();
 			pr.println("<center>");

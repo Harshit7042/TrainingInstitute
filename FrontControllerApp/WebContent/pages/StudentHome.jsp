@@ -14,7 +14,7 @@
   <a href="..\pages\Update.jsp"><button class="btn btn3">Update Profile</button></a>
    <a href="..\pages\Response1.jsp"><button class="btn btn4">View Response</button></a>
     <a href="..\pages\Feedback.jsp"><button class="btn btn3">Send Feedback</button></a>
-     <a href="..\pages\ViewFaculty.do"><button class="btn btn4">View Faculty</button></a>
+     <a href="..\pages\Viewfaculty.jsp"><button class="btn btn4">View Faculty</button></a>
      <a href="..\pages\ViewArticle.jsp"><button class="btn btn3">View Article</button></a>
      <a href="..\pages\InstituteCheck.jsp"><button class="btn btn4">Check Institute then Send Request</button></a>
       <a href="..\pages\index.jsp"><button class="btn btn4">SignOut</button></a>

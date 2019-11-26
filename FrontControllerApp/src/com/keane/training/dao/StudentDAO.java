@@ -324,7 +324,7 @@ result=DBHelper.executeSelect(con,SqlMapper.LOGINSTUDENT,SqlMapper.STUDENTEMAPPE
 		// TODO Auto-generated method stub
 		
 	}
-	public static List Viewfaculty() throws DBFWException {
+	public static List Viewfaculty(final int iid) throws DBFWException {
 		ConnectionHolder ch=null;
 		Connection con=null;
 		List result=null;
@@ -338,7 +338,7 @@ result=DBHelper.executeSelect(con,SqlMapper.LOGINSTUDENT,SqlMapper.STUDENTEMAPPE
 				public void mapParam(PreparedStatement preStmt)
 				throws SQLException {
 					
-					//preStmt.setInt(1,iid);
+					preStmt.setInt(1,iid);
 					
 					
 				}

@@ -59,7 +59,7 @@ public class SqlMapper {
 	public static final String STUDENTDETAILS13=
 		"select * from student";
 	public static final String Faculty=
-		"select * from faculty";
+		"select * from faculty where iid=?";
 	public static final String STUDENTDETAILS12=
 		"select * from student where iid=?";
 	public static final String DELETEINSTITUTE=

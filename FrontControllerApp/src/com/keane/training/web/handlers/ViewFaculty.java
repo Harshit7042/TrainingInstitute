@@ -28,8 +28,9 @@ PrintWriter out = response.getWriter();
 			PrintWriter pr=response.getWriter();
 			List<Faculty> s=null;
 			StudentDAO d=new StudentDAO();
+			int iid=Integer.parseInt(request.getParameter("iid"));
 			
-			s=d.Viewfaculty();
+			s=d.Viewfaculty(iid);
 			pr.println("<center>");
 			   pr.println("<table border='2'>");
 			   pr.println("<tr><th>FacultyId</th><th>Facultyname</th><th>FacultyDept" +

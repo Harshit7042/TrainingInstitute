@@ -290,7 +290,7 @@ public class InstituteDAO {
 			};
 				
 
-			result=DBHelper.executeSelect(con,SqlMapper.VIEWFEEDBACK,SqlMapper.VIEWFEEDBACK1,VFEEDBACK);
+			result=DBHelper.executeSelect(con,SqlMapper.VIEWFEEDBACK2,SqlMapper.VIEWFEEDBACK1,VFEEDBACK);
 					
 				
 				

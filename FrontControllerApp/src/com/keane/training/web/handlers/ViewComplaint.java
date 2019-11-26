@@ -20,6 +20,8 @@ public class ViewComplaint  implements HttpRequestHandler{
 	@Override
 	public void handle(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {	
+		PrintWriter out=response.getWriter();
+		
 
 		try {
 			
@@ -49,5 +51,17 @@ public class ViewComplaint  implements HttpRequestHandler{
 			request.setAttribute("Err", e.getMessage());
 			dispatcher.forward(request, response);
 		}
+		String h="<html>";
+		h+="<body >";
+		
+		
+		h+="<form action='Adminhome.jsp'>";
+		h+="<input type='submit' value='Back'/>";
+		h+="</form>";
+		
+		
+		h+="</body>";
+		h+="</html>";
+		out.print(h);
 	}
 }

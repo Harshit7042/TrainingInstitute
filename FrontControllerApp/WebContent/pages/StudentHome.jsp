@@ -16,7 +16,7 @@
     <a href="..\pages\Feedback.jsp"><button class="btn btn3">Send Feedback</button></a>
      <a href="..\pages\ViewFaculty.do"><button class="btn btn4">View Faculty</button></a>
      <a href="..\pages\ViewArticle.jsp"><button class="btn btn3">View Article</button></a>
-     <a href="..\pages\InstituteCheck.jsp"><button class="btn btn4">Check Institute</button></a>
+     <a href="..\pages\InstituteCheck.jsp"><button class="btn btn4">Check Institute then Send Request</button></a>
       <a href="..\pages\index.jsp"><button class="btn btn4">SignOut</button></a>
      
      

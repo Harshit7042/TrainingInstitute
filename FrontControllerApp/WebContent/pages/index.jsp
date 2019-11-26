@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<body background="img5.jpeg" link="#000" alink="#017bf5" vlink="#000">
+<body background="download.jpg" link="#000" alink="#017bf5" vlink="#000">
 		<div class="main" id="home">
 			<br />
 			<h3 align="center">
@@ -29,21 +29,21 @@
 			<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br><br><br>
 			<h1 align="center">
 				<font face="sans-serif" color="#2980b9" size="7">
-				SIMPLE AND ONE PAGE WEBSITE
+				TRAINING INSTITUTE WEBSITE
 				</font>
 			</h1>
 			<h3 align="center">
 				<font face="Lato" color="#000" size="5">
-					USING HTML ONLY (NO CSS USED)
+					MADE BY HARSHIT SARAN(194754)
 				</font>
 			</h3>
 			<br />
 			<h3 align="center">
 			<a href="#">
-				<font face="Lato" color="#000">GET STARTED</font>
+				<font face="Lato" color="#000">LET'S STARTED</font>
 			</a>&nbsp;&nbsp;&nbsp;&nbsp;
 			<a href="#">
-				<font face="Lato" color="#f00">SUBSCRIBE US</font>
+				<font face="Lato" color="#f00">SUBSCRIBE ME</font>
 			</a>
 			</h3>
 		</div>
@@ -60,24 +60,24 @@
 			<table align="center" cellspacing="10" cellpadding="15">
 				<tr>
 					<td>
-						<img src="img1.jpeg" height="200" width="300">
+						<img src="download imp.jpg" height="200" width="300">
 					</td>
 					<td>
-						<img src="img2.jpeg" height="200" width="300">
+						<img src="downloadhh.jpg" height="200" width="300">
 					</td>
 					<td>
-						<img src="img3.jpeg" height="200" width="300">
+						<img src="downloadpp.jpg" height="200" width="300">
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<img src="img4.jpeg" height="200" width="300">
+						<img src="images.jpg" height="200" width="300">
 					</td>
 					<td>
-						<img src="img5.jpeg" height="200" width="300">
+						<img src="training.jpg" height="200" width="300">
 					</td>
 					<td>
-						<img src="img6.jpeg" height="200" width="300">
+						<img src="downloadhh.jpg" height="200" width="300">
 					</td>
 				</tr>
 				<tr>
@@ -128,7 +128,7 @@
 		</p>
 		<p align="center">
 			<font face="sans-serif" size="4" color="#000">
-				Proudly made by fullyworld web tutorials. Free to use.
+				Made by Harshit Saran(194754)
 			</font>
 		</p>
 </body>

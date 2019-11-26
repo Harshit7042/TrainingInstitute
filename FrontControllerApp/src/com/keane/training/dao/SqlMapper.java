@@ -79,7 +79,9 @@ public class SqlMapper {
 	public static final String INSERTFEEDBACK=
 		"insert into Feedback values(?,?,?,?)";
 	public static final String VIEWFEEDBACK=
-		"select * from Feedback where iid=?";
+		"select * from Feedback ";
+	public static final String VIEWFEEDBACK2=
+			"select * from Feedback where iid=?";
 	public static final String UPLOADARTICLE1=
 		"insert into Article values(?,?,?)";
 	public static final String VIEWARTICLE1=
